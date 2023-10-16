@@ -7,7 +7,7 @@
     margin: 0 auto;
     padding: 1px 0;
 }
-.organizer-type-1 {
+.organizer-type-header {
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
     /* justify-content: ; */
@@ -46,9 +46,12 @@
     display: flex;
     flex-direction: column;
     justify-self: right;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
 }
 .header__text, .footer__text {
-    width: 212px;
+    width: 240px;
 }
 /*==========cover===============*/
 .cover {
@@ -74,10 +77,10 @@
     font-size: 100px;
     font-style: normal;
     font-weight: 700;
-    line-height: 115%; 
+    line-height: 123%; 
     letter-spacing: 30px;
     text-transform: uppercase;
-    margin: 165px 0 135px;
+    margin: 165px 0 123px;
     letter-spacing: 30px;
 }
 .aligned-text {
@@ -95,6 +98,9 @@
 .letter-spacing-extended {
     letter-spacing: 60px;
 }
+.letter-spacing-zero {
+    letter-spacing: 0;
+}
 .cover__description {
     display: flex;
     gap:78px;
@@ -110,14 +116,14 @@
     font-weight: 400;
     line-height: 127.273%;
     text-transform: uppercase;
-    word-spacing: 30px;
+    word-spacing: 18px;
 }
 .bet-button {
     border: 1px solid currentColor;
     padding: 12px 32px;
     background-color: transparent;
     color: #FFF;
-    font-family: Raleway;
+    font-family: Raleway, sans-serif;
     text-align: center;
     font-size: 22px;
     font-style: normal;
@@ -126,7 +132,7 @@
     text-transform: uppercase;
 }
 .lots{
-    margin: 150px 0 180px;
+    margin: 180px 0;
 }
 .lots__heading{
     color: #000;
@@ -150,6 +156,7 @@
     width: 430px;
     flex-grow: 1;
     background-position: center;
+    min-height:450px;
 }
 .card_type_film{
     background-image: url(../images/card-lot-01.jpg);
@@ -222,6 +229,7 @@
     display: grid;
     grid-template-columns: 430px 1fr;
     gap: 25px;
+    justify-items: center;
 }
 .about__logo{
     background-color: black;
@@ -248,7 +256,7 @@
 .footer .container{
     display: block;
 }
-.organizer-type-2 {
+.organizer-type-footer {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
